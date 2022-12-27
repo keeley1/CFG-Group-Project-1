@@ -1,0 +1,65 @@
+nav {
+background-color: #FFFFFF;
+}
+
+
+body {
+background-color: #F2F2F2;
+}
+
+
+/*Homepage Welcome Section*/
+
+
+.welcome-text {
+    position: absolute;
+    width: 422px;
+    height: 357px;
+    left: 135px;
+    top: 172px;
+}
+
+.welcome-image {
+    position: absolute;
+    width: 570px;
+    height: 380px;
+    left: 635px;
+    top: 110px;    
+}
+
+/*Homepage Intro Section*/
+.intro-section {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*Homepage Suites Image Gallery*/
+
+.suites-image-gallery-title {
+text-align: center;
+}
+
+.suites-image-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Homepage Review Section*/
+
+.review-section {
+    text-align: center;
+}
+
+/*Homepage Find Us Section*/
+
+.find-us-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
