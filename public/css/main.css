@@ -3,6 +3,37 @@ background-color: #FFFFFF;
 }
 
 
+.list-inline-nav-bar-home {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.list-inline-nav-bar {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.list-inline-nav-bar-book-now {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 body {
 background-color: #F2F2F2;
 }
@@ -10,28 +41,47 @@ background-color: #F2F2F2;
 
 /*Homepage Welcome Section*/
 
+.welcome-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
 
 .welcome-text {
-    position: absolute;
-    width: 422px;
-    height: 357px;
-    left: 135px;
-    top: 172px;
+    text-align: left;
+    float: left;
+    margin: 5em;
 }
 
 .welcome-image {
-    position: absolute;
-    width: 570px;
-    height: 380px;
-    left: 635px;
-    top: 110px;    
+    float: right;   
+    margin: 5em;
+    width: 40em;
+    height: 30em;
 }
 
 /*Homepage Intro Section*/
 .intro-section {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.intro-text {
+    text-align: left;
+    float: left;
+    margin: 5em;
+}
+
+.intro-image {
+    float: right;   
+    margin: 5em;
+    width: 40em;
+    height: 30em;
 }
 
 
@@ -48,6 +98,8 @@ text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
 
 /*Homepage Review Section*/
 
