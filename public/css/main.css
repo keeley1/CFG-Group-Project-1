@@ -1,8 +1,8 @@
-nav {
-background-color: #FFFFFF;
-}
-
-
+.nav-bar {
+    background-color: #FFFFFF;
+    }
+    
+    
 .list-inline-nav-bar-home {
     display: flex;
     flex-direction: row;
@@ -19,7 +19,8 @@ background-color: #FFFFFF;
     float: left;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 1em;
+    padding-right: 1em;
 
 }
 
@@ -29,18 +30,16 @@ background-color: #FFFFFF;
     justify-content: flex-end;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-right: 1em;
 }
-
-
 
 body {
-background-color: #F2F2F2;
-}
-
-
-/*Homepage Welcome Section*/
-
+    background-color: #F2F2F2;
+    }
+    
+    
+    /*Homepage Welcome Section*/
+    
 .welcome-section {
     display: flex;
     flex-direction: row;
@@ -84,22 +83,20 @@ background-color: #F2F2F2;
     height: 30em;
 }
 
-
 /*Homepage Suites Image Gallery*/
 
 .suites-image-gallery-title {
-text-align: center;
+    text-align: center;
 }
-
+    
 .suites-image-gallery {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 0;
 }
-
-
 
 /*Homepage Review Section*/
 
@@ -115,3 +112,42 @@ text-align: center;
     text-align: center;
 }
 
+/*Footer Nav Bar*/
+
+.footer-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list-inline-nav-bar {
+    margin: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.footer-list-inline-nav-bar-the-royal-mews {
+    margin: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+/*Footer Divider Line*/
+hr {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.footer-copyright-text {
+    text-align: center;
+    padding: 0.5em;
+}
