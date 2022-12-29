@@ -73,21 +73,38 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 5em;
-    padding-bottom: 5em;
 }
 
 .welcome-text {
     text-align: left;
     float: left;
     margin: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
+
+.welcome-take-a-look-button {
+    background-color: #000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 0.3em;
+    text-align: center;
+    width: 10em;
+    height: 3em;
+}
+
+.welcome-take-a-look-button:hover {
+    background-color: rgb(79, 79, 79);
+    font-family: 'Roboto', sans-serif;
+}   
 
 .welcome-image {
     float: right;   
     margin: 5em;
     width: 40em;
     height: 30em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 /*Homepage Intro Section*/
@@ -129,15 +146,36 @@ body {
 
 /*Homepage Review Section*/
 
-.review-section {
+.review-title {
     text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
+
+.review-one {
+    padding-left: 15em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.review-two {
+    padding-left: 31em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.review-three {
+    padding-left: 16em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 
 /*Homepage Find Us Section*/
 
 .find-us-section {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5em;
+    padding-bottom: 5em;
     text-align: center;
 }
 
