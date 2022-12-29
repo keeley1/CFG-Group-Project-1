@@ -122,10 +122,14 @@ body {
     margin: 5em;
 }
 
+.intro-suite-bullets-text {
+    padding: 0.3em;
+}
+
 .intro-image {
     float: right;   
     margin: 5em;
-    width: 40em;
+    width: 45em;
     height: 30em;
 }
 
@@ -141,6 +145,41 @@ body {
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 0;
+}
+
+.sydney-suite-img {
+    background-color: white;
+    
+}
+
+.malibu-suite-img {
+    background-color: white;
+  
+}
+
+.girls-only-suite-img {
+    background-color: white;
+   
+}
+
+.savannah-suite-img {
+    background-color: white;
+ 
+}
+
+.suite-gallery-preview-title {
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.suite-gallery-preview-text {
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    padding-left: 1em;
     margin: 0;
 }
 
