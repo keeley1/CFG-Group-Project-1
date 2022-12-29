@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+p {
+    font-weight: 300;
+}
+
 /*---upper navbar styling---*/
 .nav-bar {
     background-color: #FFFFFF;
@@ -24,7 +30,7 @@ a {
     margin-right: 45px;
     margin-left: 30px;
     font-weight: 800;
-    padding: 5px;
+    padding: 1em;
 }
 
 .list-inline-nav-bar-home:hover {
@@ -34,7 +40,7 @@ a {
 
 .list-inline-nav-bar {
     margin-right: 30px;
-    padding: 5px;
+    padding: 1em;
 }
 
 .list-inline-nav-bar:hover {
@@ -45,33 +51,19 @@ a {
 .list-inline-nav-bar-book-now {
     background-color: black;
     border-radius: 5px;
-    padding: 5px;
+    padding: 1em;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .list-inline-nav-bar-book-now:hover {
     background-color: rgb(79, 79, 79);
-}
-
-/*---bottom navbar styling---*/
-.footer-list-inline-nav-bar-the-royal-mews {
-    font-weight: 800;
-}
-
-.footer-list-inline-nav-bar-the-royal-mews:hover {
-    background-color: rgb(196, 196, 196);
-    border-radius: 5px;
-}
-
-.footer-list-inline-nav-bar:hover {
-    background-color: rgb(196, 196, 196);
-    border-radius: 5px;
-}
-    
+    font-family: 'Roboto', sans-serif;
+}   
 
 body {
     background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
 }
     
     
@@ -149,8 +141,72 @@ body {
     text-align: center;
 }
 
-/*Footer Nav Bar*/
+/*---button styling---*/
+.outline-button {
+    margin-top: 100px;
+    border: 2px solid black;
+    padding: 1em;
+    border-radius: 5px;
+}
 
+.outline-button:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+.small-button {
+    border: 2px solid black;
+    padding: 0.4em;
+    border-radius: 5px;
+}
+
+.small-button:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+/*---suites styling---*/
+.suites-title {
+   margin-left: 2em;
+   margin-top: 2em;
+   margin-bottom: 1em;
+}
+
+.suites-one {
+    display: flex;
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.suites-one-text {
+    margin-top: 20px;
+    margin-right: 120px;
+}
+
+.suites-one-text1 {
+    background-color: antiquewhite;
+}
+
+.other-suites {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.other-suites-para {
+    margin-left: 25em;
+    margin-right: 25em;
+}
+
+.other-suites-gallery {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.other-suites-one {
+    margin: 2em;
+}
+
+/*Footer Nav Bar*/
 .footer-nav-bar {
     display: flex;
     flex-direction: row;
@@ -170,10 +226,21 @@ body {
 
 .footer-list-inline-nav-bar-the-royal-mews {
     margin: 0;
+    font-weight: 900;
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
+}
+
+.footer-list-inline-nav-bar-the-royal-mews:hover {
+    background-color: rgb(196, 196, 196);
+    border-radius: 5px;
+}
+
+.footer-list-inline-nav-bar:hover {
+    background-color: rgb(196, 196, 196);
+    border-radius: 5px;
 }
 
 /*Footer Divider Line*/
