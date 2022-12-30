@@ -1,13 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Sydney Suite</title>
-    <link rel="stylesheet" href="../public/css/main.css">
+  <title>Sydney Suite</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../public/css/main.css">
 </head>
 <body>
-    <h1>The Sydney Suite</h1>
+    <nav>
+        <ul class="nav-bar">
+          <div class="nav-one">
+            <li class="list-inline-nav-bar-home"><a href="/Homepage.html">Home</a></li>
+            <li class="list-inline-nav-bar"><a href="/views/suites.html">Suites</a></li>
+            <li class="list-inline-nav-bar"><a href="/views/about.html">About</a></li>
+            <li class="list-inline-nav-bar"><a href="/views/contact.html">Contact</a></li>
+          </div>
+          <div class="nav-two">
+            <li class="list-inline-nav-bar-book-now"><a href="/views/book-now.html" style="color: white;">Book Now</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <h1 class="titles1">The Sydney Suite</h1>
+      <div class="row-container">
+        <div class="row-image">
+            <img src="../public/images/sydney-suite-2.jpg" width="350px">
+        </div>
+        <div class="row-text">
+            <p>Our most private multi-cat suite! Purrfect for the more private kitties. With 300 square ft of space, there is plenty of room for your kitty to play, sleep, and eat! A perfect cheaper option as the Sydney Suite holds the most kitties.</p>
+            <h3>Room Features</h3>
+            <ul>
+                <li>Classy decor</li>
+                <li>Private sleeping areas</li>
+                <li>Lots of natural light</li>
+                <li>Plenty of cat toys</li>
+            </ul>
+        </div>
+      </div>
+
+      <h2 class="carousel-title">Reviews for this Suite</h2>
+      <div class="slideshow-container">
+        <div class="mySlides">
+            <q>Such great value and lovely room!</q>
+            <p class="author">- Customer</p>
+        </div>
+        <div class="mySlides">
+            <q>Lovely hotel and room. Perfect amount of privacy and play space for our kitty.</q>
+            <p class="author">- Customer</p>
+        </div>
+        <div class="mySlides">
+            <q>Our cat loved it! We felt so safe leaving her for our week away!</q>
+            <p class="author">- Customer</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>
+     <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <!--JavaScript for slideshow-->
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    <footer>
+    <nav class="footer-nav-bar">
+        <ul class="footer-nav-bar">
+          <li class="footer-list-inline-nav-bar"><a href="/Homepage.html">The Hotel</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/suites.html">Suites</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/location.html">Location</a></li>
+          <li class="footer-list-inline-nav-bar-the-royal-mews"><a href="/Homepage.html">THE ROYAL MEWS</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/about.html">About</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/blog.html">Blog</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <p class="footer-copyright-text">&#169; Sarah, Keeley and Danielle for CFG 2022</p>
+    </footer>
 </body>
 </html>

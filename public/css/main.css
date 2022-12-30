@@ -202,7 +202,7 @@ body {
 }
 
 /*---suites styling---*/
-.suites-title {
+.titles1 {
    margin-left: 2em;
    margin-top: 2em;
    margin-bottom: 1em;
@@ -243,6 +243,104 @@ body {
 .other-suites-one {
     margin: 2em;
 }
+
+.row-container {
+    display: flex;
+    margin: 75px;
+}
+
+.row-image {
+    margin-right: 30px;
+}
+
+.row-text {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 5em;
+    margin-top: 1em;
+}
+
+.bottom-title {
+    margin-top: 75px;
+    margin-left: 75px;
+}
+
+.bottom-text {
+    margin-left: 75px;
+}
+
+/*---review carousel styling---*/
+.carousel-title {
+    margin-left: 75px;
+}
+
+.slideshow-container {
+    position: relative;
+    background: #d4d4d4f1;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    background: rgb(233, 233, 233);
+    margin-bottom: 2em;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  q {
+    font-style: italic;
+  }
+  
 
 /*Footer Nav Bar*/
 .footer-nav-bar {

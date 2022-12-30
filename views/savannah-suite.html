@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Malibu Suite</title>
-    <link rel="stylesheet" href="../public/css/main.css">
+  <title>Savannah Suite</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../public/css/main.css">
 </head>
 <body>
-    <h1>The Malibu Suite</h1>
+    <nav>
+        <ul class="nav-bar">
+          <div class="nav-one">
+            <li class="list-inline-nav-bar-home"><a href="/Homepage.html">Home</a></li>
+            <li class="list-inline-nav-bar"><a href="/views/suites.html">Suites</a></li>
+            <li class="list-inline-nav-bar"><a href="/views/about.html">About</a></li>
+            <li class="list-inline-nav-bar"><a href="/views/contact.html">Contact</a></li>
+          </div>
+          <div class="nav-two">
+            <li class="list-inline-nav-bar-book-now"><a href="/views/book-now.html" style="color: white;">Book Now</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <h1 class="titles1">The Savannah Suite</h1>
+      <div class="row-container">
+        <div class="row-image">
+            <img src="../public/images/savannah-suite-2.jpg" width="350px">
+        </div>
+        <div class="row-text">
+            <p>Beautiful mid-priced option for your kitty! Lots of play space for social cats and lovely water feature! Plenty of climbing space for the most active kitties!</p>
+            <h3>Room Features</h3>
+            <ul>
+                <li>Astroturf area</li>
+                <li>Cat-safe greenery</li>
+                <li>Lots of climbing and perching spaces</li>
+            </ul>
+        </div>
+      </div>
+
+      <h2 class="carousel-title">Reviews for this Suite</h2>
+      <div class="slideshow-container">
+        <div class="mySlides">
+            <q>My cat loved playing with all of the other! Great value.</q>
+            <p class="author">- Customer</p>
+        </div>
+        <div class="mySlides">
+            <q>Such a beautiful room! Was nervous leaving our kitty but he did so well thanks to lovely room and staff!</q>
+            <p class="author">- Customer</p>
+        </div>
+        <div class="mySlides">
+            <q>Will definitely be back in the future! Such a beautiful hotel.</q>
+            <p class="author">- Customer</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>
+     <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <!--JavaScript for slideshow-->
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+    <!--<h2 class="bottom-title">Looking for something different?</h2>
+    <p class="bottom-text">Check out our other suites:</p>-->
+    
+    <footer>
+    <nav class="footer-nav-bar">
+        <ul class="footer-nav-bar">
+          <li class="footer-list-inline-nav-bar"><a href="/Homepage.html">The Hotel</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/suites.html">Suites</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/location.html">Location</a></li>
+          <li class="footer-list-inline-nav-bar-the-royal-mews"><a href="/Homepage.html">THE ROYAL MEWS</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/about.html">About</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/blog.html">Blog</a></li>
+          <li class="footer-list-inline-nav-bar"><a href="/views/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <p class="footer-copyright-text">&#169; Sarah, Keeley and Danielle for CFG 2022</p>
+    </footer>
 </body>
 </html>
