@@ -37,6 +37,7 @@ a {
 .list-inline-nav-bar-home:hover {
     background-color: rgb(196, 196, 196);
     border-radius: 5px;
+    text-decoration: underline;
 }
 
 .list-inline-nav-bar {
@@ -47,6 +48,7 @@ a {
 .list-inline-nav-bar:hover {
     background-color: rgb(196, 196, 196);
     border-radius: 5px;
+    text-decoration: underline;
 }
 
 .list-inline-nav-bar-book-now {
@@ -60,6 +62,7 @@ a {
 .list-inline-nav-bar-book-now:hover {
     background-color: rgb(79, 79, 79);
     font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
 }   
 
 body {
@@ -463,6 +466,42 @@ body {
     background-color: rgb(196, 196, 196);
     border-radius: 5px;
 }
+
+
+
+
+/*Book Now Page Styling*/
+.book-now-welcome-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.book-now-welcome-text {
+    text-align: left;
+    float: left;
+    margin: 5em;
+    padding-top: 15em;
+    padding-bottom: 5em;
+} 
+
+.book-now-welcome-image {
+    float: right;   
+    margin: 5em;
+    width: 40em;
+    height: 30em;
+    padding-top: 5em;
+}
+
+.section-title {
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+
+
 
 /*Footer Divider Line*/
 hr {
