@@ -360,7 +360,6 @@ body {
     margin-bottom: 2em;
   }
   
-  /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -379,6 +378,53 @@ body {
   q {
     font-style: italic;
   }
+
+  /*---contact page styling---*/
+  .contact-title {
+    margin-left: 3.5em;
+  }
+
+  .contact-form {
+    background-color: #d4d4d4f1;
+    border-radius: 5px;
+    padding: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 2em;
+  }
+
+  input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    font-family: 'Roboto', sans-serif;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1.5em;
+    width: 20%;
+    background-color: #000000;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: rgb(79, 79, 79);
+  }
+
   
 
 /*Footer Nav Bar*/
