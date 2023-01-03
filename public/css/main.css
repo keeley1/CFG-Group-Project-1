@@ -498,6 +498,23 @@ body {
     padding: 1em;
 }
 
+.fields-list {
+    text-align: center;
+}
+
+.fields-bullets {
+    list-style-type: none;
+}
+
+.submit-button {
+    text-align: center;
+    list-style-type: none;
+}
+
+.br-section {
+    text-align: center;
+}
+
 
 
 

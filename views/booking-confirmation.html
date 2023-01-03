@@ -25,7 +25,7 @@
         <div class="book-now-welcome-section">
         <div class="book-now-welcome-text">
           <h1>Booking Complete!</h1>
-          <h2>Your cat’s stay will arrive sooner than you can say Meow!</h2>
+          <h2>Your cat's stay will arrive sooner than you can say Meow!</h2>
         </div>
           <img class="book-now-welcome-image" src="https://i.chzbgr.com/full/9191487744/h720BC861/vac-cat-hotel-spa-china">
       </div>
@@ -36,7 +36,62 @@
             <h3>Please see the details below for your pet's stay. 
                 We can guarantee that your pet will come home feline great!</h3>
         </div>
+        <div class="br-section">
+        <p id="br-guests"></p>
+        <p id="br-start"></p>
+        <p id="br-end"></p>
+        <p id="br-request"></p>
+        </div>
       </div>
+      <hr>
+      <div class="billing-details-section">
+        <div class="section-title">
+            <h1>Billing Details</h1>
+        </div>
+        <div class="br-section">
+        <p id="br-name"></p>
+        <p id="br-surname"></p>
+        <p id="br-address"></p>
+        <p id="br-email"></p>
+        </div>
+      </div>
+
+      <script>
+        //Script to take form data from URL and present it on page//
+      function getUrlVars() {
+        let urlParams = {};
+        (window.onpopstate = function () {
+            let match,
+                pl = /\+/g,  // Regex for replacing addition symbol with a space
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) {
+                    return decodeURIComponent(s.replace(pl, " "));
+                },
+                query = window.location.search.substring(1);
+
+  while (match = search.exec(query)) {
+            if (decode(match[1]) in urlParams) {
+                if (!Array.isArray(urlParams[decode(match[1])])) {
+                    urlParams[decode(match[1])] = [urlParams[decode(match[1])]];
+                }
+                urlParams[decode(match[1])].push(decode(match[2]));
+            } else {
+                urlParams[decode(match[1])] = decode(match[2]);
+            }
+        }
+    })();
+  return urlParams;
+}
+      
+        document.getElementById("br-guests").innerHTML = 'Guests: ' + getUrlVars()['guests'];
+        document.getElementById("br-start").innerHTML = 'Checking In: ' + getUrlVars()['start-date'];
+        document.getElementById("br-end").innerHTML = 'Checking Out: ' + getUrlVars()['end-date'];
+        document.getElementById("br-request").innerHTML = 'Requests: ' + getUrlVars()['request'];
+        document.getElementById("br-name").innerHTML = 'Name: ' + getUrlVars()['user-name'];
+        document.getElementById("br-surname").innerHTML = 'Surname: ' + getUrlVars()['user-surname'];
+        document.getElementById("br-address").innerHTML = 'Address: ' + getUrlVars()['user-address'];
+        document.getElementById("br-email").innerHTML = 'Email: ' + getUrlVars()['user-email'];
+      </script>
 
         
       
