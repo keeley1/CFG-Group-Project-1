@@ -30,18 +30,18 @@
       </div>
       </header>
       <div class="booking-details-section">
-        <div class="section-title">
+        <div class="contact-title">
             <h1>Booking Details</h1>
             <h3>Please fill in the fields below to get one step closer to making that pet holiday pawsible.</h3>
         </div>
       </div>
-      <hr>
+      <div class="booking-divider-line"></div>
       <div class="room-details-section">
-        <div class="section-title">
+        <div class="contact-title">
             <h1>Room Details</h1>
         </div>
-        <form id="form-id" action="/views/booking-confirmation.html">
-        <div class="fields-list">
+        <form name="form-id" id="form-id" action="/views/booking-confirmation.html">
+        <div class="contact-form">
         <ul class="fields-bullets">
             <li>
                 <label for="guests">Number of Guests:</label>
@@ -66,19 +66,15 @@
                 <label for="end-date">Checking Out:</label>
                 <input type="date" id="end-date" name="end-date" />
             </li>
-            <li>
-                <label for="request">Requests:</label>
-                <textarea id="request" name="request"></textarea>
-            </li>
           </ul>
           </div>
       </div>
-      <hr>
+      <div class="booking-divider-line"></div>
       <div class="billing-details-section">
-        <div class="section-title">
+        <div class="contact-title">
             <h1>Billing Information</h1>
         </div>
-        <div class="fields-list">
+        <div class="contact-form">
             <ul class="fields-bullets">
                 <li>
                     <label for="name">Name:</label>
@@ -98,9 +94,9 @@
                 </li>
             </ul>
             </div>
-            <ul class="submit-button">
+            <ul class="submit-button-section">
               <li>
-                <button type="submit" name="save" value="save" form="form-id">Submit</button>
+                <button class="submit-button" type="submit" name="save" value="save" form="form-id">Submit</button>
             </li>
             </ul>
         </form>

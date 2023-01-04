@@ -138,78 +138,18 @@ body {
 
 /*Homepage Suites Image Gallery*/
 
-.suites-image-gallery-title {
+.other-suites-para-homepage {
     text-align: center;
-}
-    
-.suites-image-gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0;
+    margin-left: 25em;
+    margin-right: 25em;
 }
 
-.sydney-suite-img {
-    background-color: white;
-    
-}
-
-.malibu-suite-img {
-    background-color: white;
-  
-}
-
-.girls-only-suite-img {
-    background-color: white;
-   
-}
-
-.savannah-suite-img {
-    background-color: white;
- 
-}
-
-.suite-gallery-preview-title {
-    padding-left: 2em;
-    padding-top: 1em;
-}
-
-.suite-gallery-preview-text {
-    display: flex;
-    justify-content: flex-end;
-    float: left;
-    padding-top: 4em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    margin: 0;
-}
 
 /*Homepage Review Section*/
 
-.review-title {
+.carousel-title-homepage {
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
 
-.review-one {
-    padding-left: 15em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.review-two {
-    padding-left: 31em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.review-three {
-    padding-left: 16em;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 
@@ -428,6 +368,112 @@ body {
     background-color: rgb(79, 79, 79);
   }
 
+
+
+
+
+/*Book Now/Booking Confirmation Page Styling*/
+.book-now-welcome-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.book-now-welcome-text {
+    text-align: left;
+    float: left;
+    margin: 5em;
+    padding-top: 15em;
+    padding-bottom: 5em;
+} 
+
+.book-now-welcome-image {
+    float: right;   
+    margin: 5em;
+    width: 40em;
+    height: 30em;
+    padding-top: 5em;
+}
+
+.section-title {
+    text-align: center;
+}
+
+
+.fields-bullets {
+    list-style-type: none;
+}
+
+#guests {
+    padding: 2px;
+    margin: 1em;
+    padding-right: 48px;
+}
+
+#start-date {
+    padding: 2px;
+    margin: 1em;
+    padding-right: 10px;
+}
+
+#end-date {
+    padding: 2px;
+    margin: 1em;
+}
+
+.submit-button-section {
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.submit-button {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1.5em;
+    width: 20%;
+    background-color: #000000;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: rgb(79, 79, 79);
+}
+
+.br-section {
+    text-align: center;
+}
+
+.print-button-section {
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.print-button {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1.5em;
+    width: 20%;
+    background-color: #000000;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background-color: rgb(79, 79, 79);
+}
+
+.booking-divider-line {
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 60px;
+}
   
 
 /*Footer Nav Bar*/
@@ -466,57 +512,6 @@ body {
     background-color: rgb(196, 196, 196);
     border-radius: 5px;
 }
-
-
-
-
-/*Book Now Page Styling*/
-.book-now-welcome-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.book-now-welcome-text {
-    text-align: left;
-    float: left;
-    margin: 5em;
-    padding-top: 15em;
-    padding-bottom: 5em;
-} 
-
-.book-now-welcome-image {
-    float: right;   
-    margin: 5em;
-    width: 40em;
-    height: 30em;
-    padding-top: 5em;
-}
-
-.section-title {
-    text-align: center;
-    padding: 1em;
-}
-
-.fields-list {
-    text-align: center;
-}
-
-.fields-bullets {
-    list-style-type: none;
-}
-
-.submit-button {
-    text-align: center;
-    list-style-type: none;
-}
-
-.br-section {
-    text-align: center;
-}
-
-
-
 
 
 
