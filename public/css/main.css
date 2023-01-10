@@ -493,7 +493,23 @@ body {
     width: 60%;
     margin-left: 60px;
 }
-  
+
+
+
+/*Location Page Styling*/
+.location-title-section {
+    padding: 5em;
+}
+
+.google-maps-location-section {
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+.transport-info {
+    padding: 5em;
+}
+
 
 /*Footer Nav Bar*/
 .footer-nav-bar {
