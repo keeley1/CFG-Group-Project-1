@@ -469,6 +469,8 @@ body {
 .print-button-section {
     list-style-type: none;
     margin-left: 50px;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 .print-button {
@@ -494,11 +496,97 @@ body {
     margin-left: 60px;
 }
 
+#br-guests {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#br-start {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#br-end {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#br-name {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#br-surname {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#br-address {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#br-email {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 
 
 /*Location Page Styling*/
-.location-title-section {
-    padding: 5em;
+.location-title-section-text {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+}
+
+.location-img {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
 }
 
 .google-maps-location-section {
@@ -507,7 +595,9 @@ body {
 }
 
 .transport-info {
-    padding: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
 }
 
 
