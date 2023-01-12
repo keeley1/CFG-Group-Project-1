@@ -443,6 +443,7 @@ body {
 .submit-button-section {
     list-style-type: none;
     margin-left: 50px;
+    text-align: center;
 }
 
 .submit-button {
